@@ -1,0 +1,128 @@
+import type { Dictionary } from "./sr";
+
+export const en: Dictionary = {
+  brand: "Apartman Kukić",
+  nav: {
+    about: "Apartment",
+    availability: "Availability",
+    gallery: "Gallery",
+    location: "Location",
+    faq: "FAQ",
+    cta: "Book now",
+  },
+  hero: {
+    titlePre: "Your ",
+    titleEm: "perfect",
+    titlePost: " stay in Banja Luka",
+    subtitle:
+      "A stylish, fully equipped apartment in the heart of Banja Luka. Every sight, café and the business district are just a few minutes' walk away — perfect for couples and business guests.",
+    ctaAvailability: "Check availability",
+    ctaGallery: "View gallery",
+    facts: [
+      { n: "34m²", l: "of comfort" },
+      { n: "2–3", l: "guests" },
+      { n: "5min", l: "to centre" },
+    ],
+  },
+  marquee: ["Fast WiFi", "Free parking", "Air conditioning", "Smart TV", "Equipped kitchen", "Centre at your doorstep"],
+  gallery: {
+    eyebrow: "Gallery",
+    title: "A look inside",
+    lead: "Every space carefully furnished — from the living room to the kitchen.",
+    captions: ["Living room", "Bedroom", "Bathroom", "Kitchen"],
+    moreCount: "+12",
+    moreLabel: "photos",
+  },
+  about: {
+    eyebrow: "About the apartment",
+    title: "Comfort in the centre",
+    lead: "A bright, airy space with everything you need for a pleasant stay — a comfortable bed, fast internet and a fully equipped kitchen. Ideal for a short break or a business trip in the city centre.",
+    stats: ["42 m²", "2–3 guests", "1 bedroom", "1st floor, lift"],
+    amenities: ["Fast WiFi", "Free parking", "Air conditioning", "Smart TV", "Washing machine", "Kitchen"],
+  },
+  availability: {
+    eyebrow: "Availability",
+    title: "Check available dates",
+    sync: "Booking.com sync",
+    nextLabel: "Next available dates",
+    noFree: "Check the calendar",
+    nightsInRow: "free nights in a row",
+    contactForDetails: "Get in touch for details",
+    pills: [
+      { n: "1", l: "min. stay" },
+      { n: "2 PM", l: "check-in" },
+      { n: "11 AM", l: "check-out" },
+    ],
+    cta: "Book these dates",
+  },
+  calendar: {
+    months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    weekdays: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    free: "Available",
+    busy: "Booked",
+    prevMonth: "Previous month",
+    nextMonth: "Next month",
+  },
+  nearby: {
+    eyebrow: "Surroundings",
+    titlePre: "Everything ",
+    titleEm: "within reach",
+    titlePost: "",
+    text: "Set right in the heart of Banja Luka, the apartment puts you steps from everything — Krajina Square, Gospodska Street, cafés and a walk along the Vrbas. Tap a place to open it on the map.",
+    places: [
+      { label: "Krajina Square", query: "Trg Krajine Banja Luka" },
+      { label: "Gospodska Street", query: "Gospodska ulica Banja Luka" },
+      { label: "Cafés & restaurants", query: "kafici centar Banja Luka" },
+      { label: "Supermarket", query: "market centar Banja Luka" },
+      { label: "Kastel Fortress", query: "Kastel Banja Luka" },
+    ],
+  },
+  location: {
+    eyebrow: "Location",
+    title: "Where we are",
+    leadSuffix: " — right in the centre of Banja Luka.",
+    navBtn: "Directions",
+    mapTitle: "Apartment location on the map",
+  },
+  faq: {
+    eyebrow: "FAQ",
+    title: "Frequently asked questions",
+    items: [
+      { q: "What are the check-in and check-out times?", a: "Check-in is from 2 PM and check-out is by 11 AM. Flexible times are possible by prior arrangement." },
+      { q: "Is parking free?", a: "Yes, free parking near the building is available to guests." },
+      { q: "How do booking and payment work?", a: "Booking is done directly via Viber or WhatsApp. Check availability in the calendar and we confirm your dates within minutes." },
+      { q: "Are pets allowed?", a: "Please ask about the conditions for pets before booking." },
+    ],
+  },
+  closing: {
+    titlePre: "Your free dates ",
+    titleEm: "are waiting",
+    text: "Pick your dates in the calendar and message us directly — we check and confirm within minutes. No waiting, no hassle.",
+    resp: "We usually reply within 15 minutes",
+    cardTitle: "Book your stay",
+    cardSub: "We reply fast — choose whatever suits you",
+    viber: "Message on Viber",
+    whatsapp: "Message on WhatsApp",
+    call: "Call directly",
+  },
+  footer: {
+    rights: "All rights reserved",
+  },
+  fab: {
+    label: "Book",
+    viberAria: "Book via Viber",
+    whatsappAria: "Book via WhatsApp",
+  },
+  contact: {
+    message: "Hello, I'm interested in the apartment's availability for the dates:",
+  },
+  meta: {
+    title: "Apartman Kukić — Daily apartment rental in Banja Luka centre | Book now",
+    description:
+      "A modern, fully equipped apartment by the day in the centre of Banja Luka — Prvog krajiškog korpusa 13. Ideal for couples and business guests. Check availability and book via Viber or WhatsApp.",
+    ogTitle: "Apartman Kukić — Daily apartment in Banja Luka centre",
+    ogDescription: "A modern apartment by the day in the heart of Banja Luka. Check availability and book via Viber or WhatsApp.",
+    keywords: ["apartment Banja Luka", "daily rental Banja Luka", "accommodation Banja Luka centre", "short stay Banja Luka", "apartment for rent Banja Luka", "Apartman Kukić"],
+  },
+};

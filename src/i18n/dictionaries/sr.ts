@@ -1,0 +1,128 @@
+export const sr = {
+  brand: "Apartman Kukić",
+  nav: {
+    about: "Apartman",
+    availability: "Dostupnost",
+    gallery: "Galerija",
+    location: "Lokacija",
+    faq: "Pitanja",
+    cta: "Rezerviši",
+  },
+  hero: {
+    titlePre: "Tvoj ",
+    titleEm: "savršen",
+    titlePost: " boravak u Banjaluci",
+    subtitle:
+      "Stilski uređen i potpuno opremljen apartman u srcu Banjaluke. Sve znamenitosti, kafići i poslovni centar na nekoliko minuta hoda — savršen za parove i poslovne goste.",
+    ctaAvailability: "Provjeri dostupnost",
+    ctaGallery: "Pogledaj galeriju",
+    facts: [
+      { n: "34m²", l: "komforan prostor" },
+      { n: "2–3", l: "gosta" },
+      { n: "5min", l: "do centra" },
+    ],
+  },
+  marquee: ["Brzi WiFi", "Besplatan parking", "Klima", "Smart TV", "Opremljena kuhinja", "Centar na korak"],
+  gallery: {
+    eyebrow: "Galerija",
+    title: "Pogled unutra",
+    lead: "Svaki prostor pažljivo opremljen — od dnevnog boravka do kuhinje.",
+    captions: ["Dnevni boravak", "Spavaća", "Kupatilo", "Kuhinja"],
+    moreCount: "+12",
+    moreLabel: "slika",
+  },
+  about: {
+    eyebrow: "O apartmanu",
+    title: "Komfor u centru",
+    lead: "Svijetao i prozračan prostor sa svim što vam treba za prijatan boravak — udobnim ležajem, brzim internetom i potpuno opremljenom kuhinjom. Idealan za kratak odmor ili poslovni put u centru grada.",
+    stats: ["42 m²", "2–3 gosta", "1 spavaća", "1. sprat, lift"],
+    amenities: ["Brzi WiFi", "Besplatan parking", "Klima", "Smart TV", "Veš mašina", "Kuhinja"],
+  },
+  availability: {
+    eyebrow: "Dostupnost",
+    title: "Provjeri slobodne termine",
+    sync: "Booking.com sync",
+    nextLabel: "Sljedeći slobodan termin",
+    noFree: "Provjeri kalendar",
+    nightsInRow: "slobodnih noći u nizu",
+    contactForDetails: "Javite se za detalje",
+    pills: [
+      { n: "1", l: "min. noćenje" },
+      { n: "14h", l: "prijava" },
+      { n: "11h", l: "odjava" },
+    ],
+    cta: "Rezerviši ovaj termin",
+  },
+  calendar: {
+    months: ["Januar", "Februar", "Mart", "April", "Maj", "Jun", "Jul", "Avgust", "Septembar", "Oktobar", "Novembar", "Decembar"],
+    monthsShort: ["jan", "feb", "mart", "apr", "maj", "jun", "jul", "avg", "sep", "okt", "nov", "dec"],
+    weekdays: ["Pon", "Uto", "Sri", "Čet", "Pet", "Sub", "Ned"],
+    free: "Slobodno",
+    busy: "Zauzeto",
+    prevMonth: "Prethodni mjesec",
+    nextMonth: "Sljedeći mjesec",
+  },
+  nearby: {
+    eyebrow: "Okolina",
+    titlePre: "Sve ",
+    titleEm: "na dohvat ruke",
+    titlePost: "",
+    text: "Smješten u samom srcu Banjaluke, apartman vas stavlja na korak od svega — Trga Krajine, Gospodske ulice, kafića i šetnje uz Vrbas. Klikni na lokaciju da je otvoriš na mapi.",
+    places: [
+      { label: "Trg Krajine", query: "Trg Krajine Banja Luka" },
+      { label: "Gospodska ulica", query: "Gospodska ulica Banja Luka" },
+      { label: "Kafići i restorani", query: "kafici centar Banja Luka" },
+      { label: "Market", query: "market centar Banja Luka" },
+      { label: "Tvrđava Kastel", query: "Kastel Banja Luka" },
+    ],
+  },
+  location: {
+    eyebrow: "Lokacija",
+    title: "Gdje se nalazimo",
+    leadSuffix: " — u samom centru Banjaluke.",
+    navBtn: "Navigacija",
+    mapTitle: "Lokacija apartmana na mapi",
+  },
+  faq: {
+    eyebrow: "Pitanja",
+    title: "Česta pitanja",
+    items: [
+      { q: "Koliko je vrijeme prijave i odjave?", a: "Prijava je od 14h, a odjava do 11h. Fleksibilni termini su mogući uz prethodni dogovor." },
+      { q: "Da li je parking besplatan?", a: "Da, gostima je na raspolaganju besplatan parking u blizini objekta." },
+      { q: "Kako se vrši rezervacija i plaćanje?", a: "Rezervacija se vrši direktno preko Vibera ili WhatsAppa. Dostupnost provjerite u kalendaru, a mi vam potvrđujemo termin u par minuta." },
+      { q: "Da li su ljubimci dozvoljeni?", a: "Molimo da se prije rezervacije raspitate o uslovima za boravak ljubimaca." },
+    ],
+  },
+  closing: {
+    titlePre: "Slobodan termin ",
+    titleEm: "te čeka",
+    text: "Odaberi datume u kalendaru i javi se direktno — provjeravamo i potvrđujemo termin u par minuta. Bez čekanja, bez komplikacija.",
+    resp: "Obično odgovaramo u roku od 15 minuta",
+    cardTitle: "Rezerviši svoj boravak",
+    cardSub: "Odgovaramo brzo, biraj kako ti odgovara",
+    viber: "Piši na Viber",
+    whatsapp: "Piši na WhatsApp",
+    call: "Pozovi direktno",
+  },
+  footer: {
+    rights: "Sva prava zadržana",
+  },
+  fab: {
+    label: "Rezerviši",
+    viberAria: "Rezerviši preko Vibera",
+    whatsappAria: "Rezerviši preko WhatsAppa",
+  },
+  contact: {
+    message: "Zdravo, zanima me dostupnost apartmana za termin:",
+  },
+  meta: {
+    title: "Apartman Kukić — Stan na dan Banja Luka, centar | Rezerviši odmah",
+    description:
+      "Moderan, potpuno opremljen apartman na dan u centru Banjaluke — Prvog krajiškog korpusa 13. Idealan za parove i poslovne goste. Provjeri dostupnost i rezerviši preko Vibera ili WhatsAppa.",
+    ogTitle: "Apartman Kukić — Stan na dan Banja Luka, centar",
+    ogDescription: "Moderan apartman na dan u srcu Banjaluke. Provjeri dostupnost i rezerviši preko Vibera ili WhatsAppa.",
+    keywords: ["stan na dan Banja Luka", "apartman Banja Luka", "smještaj Banja Luka centar", "stan na dan BL", "kratkoročni najam Banja Luka", "Apartman Kukić"],
+  },
+};
+
+export type Dictionary = typeof sr;
