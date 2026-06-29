@@ -8,11 +8,11 @@
  */
 export const site = {
   name: "ID Apartment",
-  domain: "https://apartmankukic.com",
+  domain: "https://apartmanbanjaluka.com",
 
   phone: {
-    display: process.env.NEXT_PUBLIC_PHONE_DISPLAY || "+387 65 000 000",
-    international: process.env.NEXT_PUBLIC_PHONE_INTL || "38765000000",
+    display: process.env.NEXT_PUBLIC_PHONE_DISPLAY || "+387 65 089 633",
+    international: process.env.NEXT_PUBLIC_PHONE_INTL || "38765089633",
   },
 
   location: {
