@@ -53,29 +53,36 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Apartment",
-  name: site.name,
-  url: site.domain,
-  description: "Moderan, potpuno opremljen apartman na dan u centru Banjaluke.",
-  numberOfRooms: 1,
-  occupancy: { "@type": "QuantitativeValue", maxValue: 3 },
-  floorSize: { "@type": "QuantitativeValue", value: 42, unitCode: "MTK" },
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Prvog krajiškog korpusa 13",
-    addressLocality: "Banja Luka",
-    postalCode: "78000",
-    addressCountry: "BA",
-  },
-  geo: { "@type": "GeoCoordinates", latitude: site.location.lat, longitude: site.location.lng },
-  telephone: site.phone.display,
-};
-
 export default async function LocaleLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
+
+  const dict = getDictionary(locale);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    name: site.name,
+    url: `${site.domain}/${locale}`,
+    description: dict.meta.description,
+    image: `${site.domain}/${locale}/opengraph-image`,
+    numberOfRooms: 1,
+    occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3, unitText: "guests" },
+    floorSize: { "@type": "QuantitativeValue", value: 34, unitCode: "MTK" },
+    amenityFeature: dict.about.amenities.map((a) => ({
+      "@type": "LocationFeatureSpecification",
+      name: a,
+      value: true,
+    })),
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Prvog krajiškog korpusa 13",
+      addressLocality: "Banja Luka",
+      postalCode: "78000",
+      addressCountry: "BA",
+    },
+    geo: { "@type": "GeoCoordinates", latitude: site.location.lat, longitude: site.location.lng },
+    telephone: `+${site.phone.international}`,
+  };
 
   return (
     <html lang={locale} className={`${inter.variable} ${fraunces.variable}`}>

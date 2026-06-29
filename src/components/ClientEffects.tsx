@@ -42,11 +42,16 @@ export function ClientEffects() {
     };
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    // FAQ
+    // FAQ — accordion: otvaranje jednog zatvara ostala
     const faqHandlers: Array<() => void> = [];
-    document.querySelectorAll(".faq-item").forEach((item) => {
+    const faqItems = document.querySelectorAll(".faq-item");
+    faqItems.forEach((item) => {
       const q = item.querySelector(".faq-q");
-      const handler = () => item.classList.toggle("open");
+      const handler = () => {
+        const willOpen = !item.classList.contains("open");
+        faqItems.forEach((other) => other.classList.remove("open"));
+        if (willOpen) item.classList.add("open");
+      };
       q?.addEventListener("click", handler);
       faqHandlers.push(() => q?.removeEventListener("click", handler));
     });

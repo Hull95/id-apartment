@@ -1,4 +1,4 @@
-/* Apartman Kukić — globalni stilovi (paleta + sve sekcije) */
+/* ID Apartment — globalni stilovi (paleta + sve sekcije) */
 
   :root{
     --cream:#FCFAF8;--cream-2:#F6F0E8;--sand:#F0E9E0;--sand-deep:#E4DACE;
@@ -133,11 +133,11 @@
   .marquee::before,.marquee::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
   .marquee::before{left:0;background:linear-gradient(90deg,var(--cream),transparent)}
   .marquee::after{right:0;background:linear-gradient(270deg,var(--cream),transparent)}
-  .marquee-track{display:flex;gap:14px;white-space:nowrap;animation:scroll 30s linear infinite;width:max-content;padding-left:14px}
-  .mq-set{display:flex;gap:14px;flex-shrink:0}
-  .mq-chip{display:inline-flex;align-items:center;gap:10px;background:var(--sage-pale);border:1px solid var(--line);border-radius:30px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--sage-deep);flex-shrink:0}
+  .marquee-track{display:flex;white-space:nowrap;animation:scroll 30s linear infinite;width:max-content}
+  .mq-set{display:flex;flex-shrink:0}
+  .mq-chip{display:inline-flex;align-items:center;gap:10px;background:var(--sage-pale);border:1px solid var(--line);border-radius:30px;padding:10px 20px;margin-right:14px;font-size:14px;font-weight:600;color:var(--sage-deep);flex-shrink:0}
   .mq-chip svg{width:17px;height:17px;color:var(--terra);flex-shrink:0}
-  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   .marquee:hover .marquee-track{animation-play-state:paused}
 
   /* GALLERY */
@@ -227,8 +227,10 @@
   .faq-q .ic svg{width:17px;height:17px;color:var(--terra-deep);transition:transform .35s var(--ease)}
   .faq-item.open .ic{background:var(--sage)}
   .faq-item.open .ic svg{transform:rotate(135deg);color:#fff}
-  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
-  .faq-a p{padding:0 24px 20px;font-size:14.5px;color:var(--espresso-soft);max-width:760px}
+  .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+  .faq-item.open .faq-a{grid-template-rows:1fr}
+  .faq-a p{overflow:hidden;min-height:0;padding:0 24px;font-size:14.5px;color:var(--espresso-soft);max-width:760px;opacity:0;transform:translateY(-6px);transition:opacity .35s var(--ease) .05s,transform .35s var(--ease) .05s,padding .45s var(--ease)}
+  .faq-item.open .faq-a p{padding:0 24px 20px;opacity:1;transform:none}
 
   /* CLOSING SECTION — light, sage, bold accents */
   .closing{margin-top:clamp(56px,9vw,100px);background:linear-gradient(160deg,var(--sage-pale) 0%,var(--cream) 100%);border-top:1px solid var(--line)}

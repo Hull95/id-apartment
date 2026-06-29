@@ -1,7 +1,7 @@
 import type { Dictionary } from "./sr";
 
 export const en: Dictionary = {
-  brand: "Apartman Kukić",
+  brand: "ID Apartment",
   nav: {
     about: "Apartment",
     availability: "Availability",
@@ -37,7 +37,7 @@ export const en: Dictionary = {
     eyebrow: "About the apartment",
     title: "Comfort in the centre",
     lead: "A bright, airy space with everything you need for a pleasant stay — a comfortable bed, fast internet and a fully equipped kitchen. Ideal for a short break or a business trip in the city centre.",
-    stats: ["42 m²", "2–3 guests", "1 bedroom", "1st floor, lift"],
+    stats: ["34 m²", "2–3 guests", "1 bedroom", "1st floor, lift"],
     amenities: ["Fast WiFi", "Free parking", "Air conditioning", "Smart TV", "Washing machine", "Kitchen"],
   },
   availability: {
@@ -75,6 +75,9 @@ export const en: Dictionary = {
       { label: "Gospodska Street", query: "Gospodska ulica Banja Luka" },
       { label: "Cafés & restaurants", query: "kafici centar Banja Luka" },
       { label: "Supermarket", query: "market centar Banja Luka" },
+      { label: "Christ the Saviour Cathedral", query: "Hram Hrista Spasitelja Banja Luka" },
+      { label: "Banski Dvor", query: "Banski dvor Banja Luka" },
+      { label: "City Park", query: "Gradski park Banja Luka" },
       { label: "Kastel Fortress", query: "Kastel Banja Luka" },
     ],
   },
@@ -89,10 +92,10 @@ export const en: Dictionary = {
     eyebrow: "FAQ",
     title: "Frequently asked questions",
     items: [
-      { q: "What are the check-in and check-out times?", a: "Check-in is from 2 PM and check-out is by 11 AM. Flexible times are possible by prior arrangement." },
-      { q: "Is parking free?", a: "Yes, free parking near the building is available to guests." },
-      { q: "How do booking and payment work?", a: "Booking is done directly via Viber or WhatsApp. Check availability in the calendar and we confirm your dates within minutes." },
-      { q: "Are pets allowed?", a: "Please ask about the conditions for pets before booking." },
+      { q: "What are the check-in and check-out times?", a: "Check-in is from 2 PM to 10 PM, and check-out is from 8 AM to 11 AM. Flexible times are possible by prior arrangement." },
+      { q: "Is parking free?", a: "Yes, parking is completely free. There is an outdoor parking spot with a barrier, as well as a garage spot." },
+      { q: "How do booking and payment work?", a: "You can book via Booking.com or directly — by Viber, WhatsApp or a phone call. Payment is made in cash, and we confirm your dates within minutes." },
+      { q: "What is included in the stay?", a: "The apartment is fully equipped — fast WiFi, air conditioning, Smart TV, a fitted kitchen, a washing machine, linens and towels, plus free parking. Everything you need for a carefree stay in the city centre." },
     ],
   },
   closing: {
@@ -118,11 +121,11 @@ export const en: Dictionary = {
     message: "Hello, I'm interested in the apartment's availability for the dates:",
   },
   meta: {
-    title: "Apartman Kukić — Daily apartment rental in Banja Luka centre | Book now",
+    title: "ID Apartment — Daily apartment rental in Banja Luka centre | Book now",
     description:
       "A modern, fully equipped apartment by the day in the centre of Banja Luka — Prvog krajiškog korpusa 13. Ideal for couples and business guests. Check availability and book via Viber or WhatsApp.",
-    ogTitle: "Apartman Kukić — Daily apartment in Banja Luka centre",
+    ogTitle: "ID Apartment — Daily apartment in Banja Luka centre",
     ogDescription: "A modern apartment by the day in the heart of Banja Luka. Check availability and book via Viber or WhatsApp.",
-    keywords: ["apartment Banja Luka", "daily rental Banja Luka", "accommodation Banja Luka centre", "short stay Banja Luka", "apartment for rent Banja Luka", "Apartman Kukić"],
+    keywords: ["apartment Banja Luka", "daily rental Banja Luka", "accommodation Banja Luka centre", "short stay Banja Luka", "apartment for rent Banja Luka", "ID Apartment"],
   },
 };

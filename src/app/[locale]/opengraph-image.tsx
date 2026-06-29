@@ -3,7 +3,7 @@ import { getDictionary } from "@/i18n";
 import { isLocale, defaultLocale } from "@/i18n/config";
 import { site } from "@/lib/config";
 
-export const alt = "Apartman Kukić — Banja Luka";
+export const alt = "ID Apartment — Banja Luka";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

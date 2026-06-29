@@ -6,7 +6,7 @@ export function Marquee({ items }: { items: string[] }) {
   return (
     <div className="marquee">
       <div className="marquee-track">
-        {[0, 1].map((set) => (
+        {[0, 1, 2, 3].map((set) => (
           <div className="mq-set" key={set} aria-hidden={set === 1}>
             {items.map((label, i) => (
               <span className="mq-chip" key={label}>

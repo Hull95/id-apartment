@@ -1,7 +1,7 @@
 import type { Dictionary } from "./sr";
 
 export const de: Dictionary = {
-  brand: "Apartman Kukić",
+  brand: "ID Apartment",
   nav: {
     about: "Apartment",
     availability: "Verfügbarkeit",
@@ -37,7 +37,7 @@ export const de: Dictionary = {
     eyebrow: "Über das Apartment",
     title: "Komfort im Zentrum",
     lead: "Ein heller, luftiger Raum mit allem, was du für einen angenehmen Aufenthalt brauchst — einem bequemen Bett, schnellem Internet und einer voll ausgestatteten Küche. Ideal für eine kurze Auszeit oder eine Geschäftsreise im Stadtzentrum.",
-    stats: ["42 m²", "2–3 Gäste", "1 Schlafzimmer", "1. Stock, Aufzug"],
+    stats: ["34 m²", "2–3 Gäste", "1 Schlafzimmer", "1. Stock, Aufzug"],
     amenities: ["Schnelles WLAN", "Kostenloser Parkplatz", "Klimaanlage", "Smart-TV", "Waschmaschine", "Küche"],
   },
   availability: {
@@ -75,6 +75,9 @@ export const de: Dictionary = {
       { label: "Gospodska-Straße", query: "Gospodska ulica Banja Luka" },
       { label: "Cafés & Restaurants", query: "kafici centar Banja Luka" },
       { label: "Supermarkt", query: "market centar Banja Luka" },
+      { label: "Christ-Erlöser-Kathedrale", query: "Hram Hrista Spasitelja Banja Luka" },
+      { label: "Banski Dvor", query: "Banski dvor Banja Luka" },
+      { label: "Stadtpark", query: "Gradski park Banja Luka" },
       { label: "Festung Kastel", query: "Kastel Banja Luka" },
     ],
   },
@@ -89,10 +92,10 @@ export const de: Dictionary = {
     eyebrow: "FAQ",
     title: "Häufige Fragen",
     items: [
-      { q: "Wann sind Check-in und Check-out?", a: "Check-in ist ab 14 Uhr, Check-out bis 11 Uhr. Flexible Zeiten sind nach vorheriger Absprache möglich." },
-      { q: "Ist das Parken kostenlos?", a: "Ja, den Gästen steht ein kostenloser Parkplatz in der Nähe des Gebäudes zur Verfügung." },
-      { q: "Wie funktionieren Buchung und Zahlung?", a: "Die Buchung erfolgt direkt über Viber oder WhatsApp. Prüfe die Verfügbarkeit im Kalender und wir bestätigen den Termin innerhalb von Minuten." },
-      { q: "Sind Haustiere erlaubt?", a: "Bitte erkundige dich vor der Buchung nach den Bedingungen für Haustiere." },
+      { q: "Wann sind Check-in und Check-out?", a: "Check-in ist von 14:00 bis 22:00 Uhr, Check-out von 08:00 bis 11:00 Uhr. Flexible Zeiten sind nach vorheriger Absprache möglich." },
+      { q: "Ist das Parken kostenlos?", a: "Ja, das Parken ist völlig kostenlos. Zur Verfügung stehen ein Außenstellplatz mit Schranke sowie ein Garagenstellplatz." },
+      { q: "Wie funktionieren Buchung und Zahlung?", a: "Die Buchung erfolgt über Booking.com oder direkt — per Viber, WhatsApp oder telefonisch. Die Zahlung erfolgt in bar und wir bestätigen den Termin innerhalb von Minuten." },
+      { q: "Was ist im Aufenthalt enthalten?", a: "Die Wohnung ist voll ausgestattet — schnelles WLAN, Klimaanlage, Smart-TV, ausgestattete Küche, Waschmaschine, Bettwäsche und Handtücher sowie kostenloses Parken. Alles, was du für einen sorglosen Aufenthalt im Stadtzentrum brauchst." },
     ],
   },
   closing: {
@@ -118,11 +121,11 @@ export const de: Dictionary = {
     message: "Hallo, ich interessiere mich für die Verfügbarkeit des Apartments für den Zeitraum:",
   },
   meta: {
-    title: "Apartman Kukić — Apartment auf Tagesbasis in Banja Luka Zentrum | Jetzt buchen",
+    title: "ID Apartment — Apartment auf Tagesbasis in Banja Luka Zentrum | Jetzt buchen",
     description:
       "Ein modernes, voll ausgestattetes Apartment auf Tagesbasis im Zentrum von Banja Luka — Prvog krajiškog korpusa 13. Ideal für Paare und Geschäftsreisende. Verfügbarkeit prüfen und über Viber oder WhatsApp buchen.",
-    ogTitle: "Apartman Kukić — Apartment in Banja Luka Zentrum",
+    ogTitle: "ID Apartment — Apartment in Banja Luka Zentrum",
     ogDescription: "Ein modernes Apartment auf Tagesbasis im Herzen von Banja Luka. Verfügbarkeit prüfen und über Viber oder WhatsApp buchen.",
-    keywords: ["Apartment Banja Luka", "Tagesmiete Banja Luka", "Unterkunft Banja Luka Zentrum", "Kurzaufenthalt Banja Luka", "Apartment mieten Banja Luka", "Apartman Kukić"],
+    keywords: ["Apartment Banja Luka", "Tagesmiete Banja Luka", "Unterkunft Banja Luka Zentrum", "Kurzaufenthalt Banja Luka", "Apartment mieten Banja Luka", "ID Apartment"],
   },
 };

@@ -28,9 +28,7 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
-  devIndicators: {
-    appIsrStatus: false,
-  },
+  devIndicators: false,
   async headers() {
     return [
       {

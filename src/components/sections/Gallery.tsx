@@ -24,7 +24,7 @@ export function Gallery({ gallery, images = [] }: { gallery: Dictionary["gallery
             {has && images[i] ? (
               <Image
                 src={images[i]}
-                alt={gallery.captions[i] ?? "Apartman Kukić"}
+                alt={gallery.captions[i] ?? "ID Apartment"}
                 fill
                 sizes={i === 0 ? "(max-width:640px) 100vw, 50vw" : "(max-width:640px) 50vw, 25vw"}
                 style={{ objectFit: "cover" }}

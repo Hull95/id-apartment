@@ -32,7 +32,7 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
     <div className="mobile-menu">
       <div className="mm-top">
         <div className="mm-brand">
-          <span className="mark">K</span> {brand}
+          <span className="mark">ID</span> {brand}
         </div>
         <div className="mm-top-right">
           <div onClick={() => setOpen(false)}>

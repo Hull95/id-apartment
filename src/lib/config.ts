@@ -7,7 +7,7 @@
  * Iz toga se automatski grade Viber, WhatsApp i tel: linkovi.
  */
 export const site = {
-  name: "Apartman Kukić",
+  name: "ID Apartment",
   domain: "https://apartmankukic.com",
 
   phone: {

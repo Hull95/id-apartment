@@ -1,4 +1,4 @@
-# Apartman Kukić — sajt za stan na dan
+# ID Apartment — sajt za stan na dan
 
 Moderan Next.js 15 sajt za apartman na dan u Banjaluci. Hero slideshow,
 kalendar dostupnosti sinhronizovan sa Booking.com, galerija, Google mapa,

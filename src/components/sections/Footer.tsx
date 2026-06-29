@@ -6,7 +6,7 @@ export function Footer({ brand, rights }: { brand: string; rights: string }) {
       <div className="wrap">
         <div className="foot-grid">
           <div className="foot-brand">
-            <span className="fm">K</span>
+            <span className="fm">ID</span>
             <div>
               <div className="fn">{brand}</div>
               <div className="fa">{site.location.address}</div>

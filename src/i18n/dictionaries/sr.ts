@@ -1,5 +1,5 @@
 export const sr = {
-  brand: "Apartman Kukić",
+  brand: "ID Apartment",
   nav: {
     about: "Apartman",
     availability: "Dostupnost",
@@ -35,7 +35,7 @@ export const sr = {
     eyebrow: "O apartmanu",
     title: "Komfor u centru",
     lead: "Svijetao i prozračan prostor sa svim što vam treba za prijatan boravak — udobnim ležajem, brzim internetom i potpuno opremljenom kuhinjom. Idealan za kratak odmor ili poslovni put u centru grada.",
-    stats: ["42 m²", "2–3 gosta", "1 spavaća", "1. sprat, lift"],
+    stats: ["34 m²", "2–3 gosta", "1 spavaća", "1. sprat, lift"],
     amenities: ["Brzi WiFi", "Besplatan parking", "Klima", "Smart TV", "Veš mašina", "Kuhinja"],
   },
   availability: {
@@ -73,6 +73,9 @@ export const sr = {
       { label: "Gospodska ulica", query: "Gospodska ulica Banja Luka" },
       { label: "Kafići i restorani", query: "kafici centar Banja Luka" },
       { label: "Market", query: "market centar Banja Luka" },
+      { label: "Hram Hrista Spasitelja", query: "Hram Hrista Spasitelja Banja Luka" },
+      { label: "Banski dvor", query: "Banski dvor Banja Luka" },
+      { label: "Gradski park", query: "Gradski park Banja Luka" },
       { label: "Tvrđava Kastel", query: "Kastel Banja Luka" },
     ],
   },
@@ -87,10 +90,10 @@ export const sr = {
     eyebrow: "Pitanja",
     title: "Česta pitanja",
     items: [
-      { q: "Koliko je vrijeme prijave i odjave?", a: "Prijava je od 14h, a odjava do 11h. Fleksibilni termini su mogući uz prethodni dogovor." },
-      { q: "Da li je parking besplatan?", a: "Da, gostima je na raspolaganju besplatan parking u blizini objekta." },
-      { q: "Kako se vrši rezervacija i plaćanje?", a: "Rezervacija se vrši direktno preko Vibera ili WhatsAppa. Dostupnost provjerite u kalendaru, a mi vam potvrđujemo termin u par minuta." },
-      { q: "Da li su ljubimci dozvoljeni?", a: "Molimo da se prije rezervacije raspitate o uslovima za boravak ljubimaca." },
+      { q: "Koje je vrijeme prijave i odjave?", a: "Prijava (check-in) je od 14:00 do 22:00, a odjava (check-out) od 08:00 do 11:00. Fleksibilni termini su mogući uz prethodni dogovor." },
+      { q: "Da li je parking besplatan?", a: "Da, parking je potpuno besplatan. Na raspolaganju je vanjsko parking mjesto sa rampom, kao i garažno mjesto." },
+      { q: "Kako se vrši rezervacija i plaćanje?", a: "Rezervaciju možete obaviti preko Booking.com-a ili direktno — Viberom, WhatsAppom ili telefonskim pozivom. Plaćanje se vrši gotovinski, a termin potvrđujemo u par minuta." },
+      { q: "Šta je sve uključeno u boravak?", a: "Apartman je potpuno opremljen — brzi WiFi, klima, Smart TV, opremljena kuhinja, veš mašina, posteljina i peškiri, uz besplatan parking. Sve što vam treba za bezbrižan boravak u centru grada." },
     ],
   },
   closing: {
@@ -116,12 +119,12 @@ export const sr = {
     message: "Zdravo, zanima me dostupnost apartmana za termin:",
   },
   meta: {
-    title: "Apartman Kukić — Stan na dan Banja Luka, centar | Rezerviši odmah",
+    title: "ID Apartment — Stan na dan Banja Luka, centar | Rezerviši odmah",
     description:
       "Moderan, potpuno opremljen apartman na dan u centru Banjaluke — Prvog krajiškog korpusa 13. Idealan za parove i poslovne goste. Provjeri dostupnost i rezerviši preko Vibera ili WhatsAppa.",
-    ogTitle: "Apartman Kukić — Stan na dan Banja Luka, centar",
+    ogTitle: "ID Apartment — Stan na dan Banja Luka, centar",
     ogDescription: "Moderan apartman na dan u srcu Banjaluke. Provjeri dostupnost i rezerviši preko Vibera ili WhatsAppa.",
-    keywords: ["stan na dan Banja Luka", "apartman Banja Luka", "smještaj Banja Luka centar", "stan na dan BL", "kratkoročni najam Banja Luka", "Apartman Kukić"],
+    keywords: ["stan na dan Banja Luka", "apartman Banja Luka", "smještaj Banja Luka centar", "stan na dan BL", "kratkoročni najam Banja Luka", "ID Apartment"],
   },
 };
 
