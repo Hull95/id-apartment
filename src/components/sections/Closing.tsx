@@ -5,7 +5,7 @@ import type { Dictionary } from "@/i18n";
 
 export function Closing({ closing, message }: { closing: Dictionary["closing"]; message: string }) {
   return (
-    <section className="closing">
+    <section className="closing" id="closing">
       <div className="wrap">
         <div className="closing-in">
           <div className="reveal">

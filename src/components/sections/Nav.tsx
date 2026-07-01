@@ -12,13 +12,14 @@ export function Nav({ brand, nav, locale }: { brand: string; nav: Dictionary["na
         </div>
         <div className="nav-links">
           <a href="#about">{nav.about}</a>
-          <a href="#availability">{nav.availability}</a>
+          {/* TODO: vrati kad se spoji Booking
+          <a href="#availability">{nav.availability}</a> */}
           <a href="#gallery">{nav.gallery}</a>
           <a href="#location">{nav.location}</a>
           <a href="#faq">{nav.faq}</a>
         </div>
         <div className="nav-right">
-          <a href="#availability" className="nav-cta">
+          <a href="#closing" className="nav-cta">
             {nav.cta}
           </a>
           <LangSwitcher current={locale} />

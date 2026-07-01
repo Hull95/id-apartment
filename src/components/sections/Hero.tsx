@@ -41,7 +41,7 @@ export function Hero({ hero, images = [] }: { hero: Dictionary["hero"]; images?:
           </h1>
           <p className="hero-anim s3">{hero.subtitle}</p>
           <div className="cta-row hero-anim s4">
-            <Button href="#availability" variant="terra">
+            <Button href="#closing" variant="terra">
               <Icon name="calendar" size={16} />
               {hero.ctaAvailability}
             </Button>

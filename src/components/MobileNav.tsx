@@ -14,7 +14,7 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
 
   const links: [string, string][] = [
     ["#about", nav.about],
-    ["#availability", nav.availability],
+    // ["#availability", nav.availability], // TODO: vrati kad se spoji Booking
     ["#gallery", nav.gallery],
     ["#location", nav.location],
     ["#faq", nav.faq],

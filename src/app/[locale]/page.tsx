@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getAvailability } from "@/lib/availability";
+// import { getAvailability } from "@/lib/availability"; // TODO: vrati kad se spoji Booking
 import { getSiteImages } from "@/lib/gallery";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n";
@@ -11,7 +11,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Marquee } from "@/components/sections/Marquee";
 import { Gallery } from "@/components/sections/Gallery";
 import { About } from "@/components/sections/About";
-import { Availability } from "@/components/sections/Availability";
+// import { Availability } from "@/components/sections/Availability"; // TODO: vrati kad se spoji Booking
 import { Nearby } from "@/components/sections/Nearby";
 import { Location } from "@/components/sections/Location";
 import { Faq } from "@/components/sections/Faq";
@@ -27,7 +27,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   if (!isLocale(locale)) notFound();
 
   const dict = getDictionary(locale);
-  const data = await getAvailability();
+  // const data = await getAvailability(); // TODO: vrati kad se spoji Booking
   const images = getSiteImages();
   const message = dict.contact.message;
 
@@ -44,7 +44,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <div className="wrap">
         <Gallery gallery={dict.gallery} images={images.gallery} />
         <About about={dict.about} />
-        <Availability data={data} t={dict.availability} cal={dict.calendar} message={message} />
+        {/* TODO: vrati sekciju Dostupnost kad se spoji Booking
+        <Availability data={data} t={dict.availability} cal={dict.calendar} message={message} /> */}
         <Nearby nearby={dict.nearby} />
         <Location location={dict.location} />
         <Faq faq={dict.faq} />
