@@ -47,13 +47,30 @@ export function ClientEffects() {
     const faqItems = document.querySelectorAll(".faq-item");
     faqItems.forEach((item) => {
       const q = item.querySelector(".faq-q");
-      const handler = () => {
+      const toggle = () => {
         const willOpen = !item.classList.contains("open");
-        faqItems.forEach((other) => other.classList.remove("open"));
-        if (willOpen) item.classList.add("open");
+        faqItems.forEach((other) => {
+          other.classList.remove("open");
+          other.querySelector(".faq-q")?.setAttribute("aria-expanded", "false");
+        });
+        if (willOpen) {
+          item.classList.add("open");
+          q?.setAttribute("aria-expanded", "true");
+        }
       };
-      q?.addEventListener("click", handler);
-      faqHandlers.push(() => q?.removeEventListener("click", handler));
+      const onKey = (e: Event) => {
+        const ke = e as KeyboardEvent;
+        if (ke.key === "Enter" || ke.key === " ") {
+          e.preventDefault();
+          toggle();
+        }
+      };
+      q?.addEventListener("click", toggle);
+      q?.addEventListener("keydown", onKey);
+      faqHandlers.push(() => {
+        q?.removeEventListener("click", toggle);
+        q?.removeEventListener("keydown", onKey);
+      });
     });
 
     // Glatki skrol do sekcija — bez #hash u URL-u (ostaje /sr)

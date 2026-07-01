@@ -15,7 +15,7 @@ export function Hero({ hero, images = [] }: { hero: Dictionary["hero"]; images?:
             {images.length > 0 && (
               <Image
                 src={images[i % images.length]}
-                alt={site.name}
+                alt={i === 0 ? site.name : ""}
                 fill
                 priority={i === 0}
                 sizes="100vw"

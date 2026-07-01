@@ -41,6 +41,13 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
             setOpen(false);
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              setOpen(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
         >
           <span className="mark">ID</span> {brand}
         </div>
@@ -48,7 +55,7 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
           <div onClick={() => setOpen(false)}>
             <LangSwitcher current={locale} />
           </div>
-          <button className="mobile-close" aria-label="Zatvori" onClick={() => setOpen(false)}>
+          <button className="mobile-close" aria-label={nav.close} onClick={() => setOpen(false)}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
@@ -68,7 +75,7 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
 
   return (
     <>
-      <button className="nav-burger" aria-label="Meni" aria-expanded={open} onClick={() => setOpen(true)}>
+      <button className="nav-burger" aria-label={nav.menu} aria-expanded={open} onClick={() => setOpen(true)}>
         <span />
         <span />
         <span />

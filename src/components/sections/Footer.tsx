@@ -13,7 +13,7 @@ export function Footer({ brand, rights }: { brand: string; rights: string }) {
             </div>
           </div>
           <div className="foot-meta">
-            © 2026 {brand}
+            © {new Date().getFullYear()} {brand}
             <br />
             {rights}
           </div>

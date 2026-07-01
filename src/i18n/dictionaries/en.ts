@@ -9,6 +9,8 @@ export const en: Dictionary = {
     location: "Location",
     faq: "FAQ",
     cta: "Book now",
+    menu: "Menu",
+    close: "Close",
   },
   hero: {
     titlePre: "Your ",

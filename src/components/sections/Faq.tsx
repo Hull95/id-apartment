@@ -9,7 +9,7 @@ export function Faq({ faq }: { faq: Dictionary["faq"] }) {
       <div className="reveal" style={{ marginTop: 28 }}>
         {faq.items.map((item) => (
           <div className="faq-item" key={item.q}>
-            <div className="faq-q">
+            <div className="faq-q" role="button" tabIndex={0} aria-expanded="false">
               <span>{item.q}</span>
               <span className="ic">
                 <Icon name="plus" size={18} />

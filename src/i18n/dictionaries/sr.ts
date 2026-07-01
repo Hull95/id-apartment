@@ -7,6 +7,8 @@ export const sr = {
     location: "Lokacija",
     faq: "Pitanja",
     cta: "Rezerviši",
+    menu: "Meni",
+    close: "Zatvori",
   },
   hero: {
     titlePre: "Tvoj ",
