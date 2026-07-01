@@ -30,6 +30,10 @@ export const sr = {
     captions: ["Dnevni boravak", "Spavaća", "Kupatilo", "Kuhinja"],
     moreCount: "+12",
     moreLabel: "slika",
+    view: "Otvori pregled",
+    close: "Zatvori",
+    prev: "Prethodna slika",
+    next: "Sljedeća slika",
   },
   about: {
     eyebrow: "O apartmanu",

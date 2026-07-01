@@ -32,6 +32,10 @@ export const en: Dictionary = {
     captions: ["Living room", "Bedroom", "Bathroom", "Kitchen"],
     moreCount: "+12",
     moreLabel: "photos",
+    view: "Open preview",
+    close: "Close",
+    prev: "Previous image",
+    next: "Next image",
   },
   about: {
     eyebrow: "About the apartment",
