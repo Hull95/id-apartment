@@ -106,7 +106,7 @@
   .hero-slide.sl3 img{animation-delay:12s}
   .hero-slide.sl4 img{animation-delay:18s}
   @keyframes kenburns{0%{transform:scale(1.18) translate3d(-3%,2.5%,0)}25%{transform:scale(1.03) translate3d(2.5%,-2%,0)}100%{transform:scale(1.03) translate3d(2.5%,-2%,0)}}
-  .hero-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(38,38,40,0.78) 0%,rgba(38,38,40,0.4) 35%,rgba(38,38,40,0.12) 70%,transparent 100%)}
+  .hero-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(38,38,40,0.84) 0%,rgba(38,38,40,0.54) 35%,rgba(38,38,40,0.34) 70%,rgba(38,38,40,0.26) 100%)}
   .hero-dots{position:absolute;bottom:28px;right:32px;z-index:5;display:flex;gap:8px}
   .hero-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);transition:all .3s}
   .hero-dots i.on{background:#fff;width:26px;border-radius:8px}
