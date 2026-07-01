@@ -20,9 +20,13 @@ export function Gallery({ gallery, images = [] }: { gallery: Dictionary["gallery
 
   // Lightbox: index otvorene slike (null = zatvoreno)
   const [open, setOpen] = useState<number | null>(null);
+  const [loaded, setLoaded] = useState(false);
   const wrap = useCallback((i: number) => ((i % images.length) + images.length) % images.length, [images.length]);
   const show = useCallback((i: number) => has && setOpen(wrap(i)), [has, wrap]);
   const close = useCallback(() => setOpen(null), []);
+
+  // Resetuj "loaded" na svaku promjenu slike (za spinner dok se učitava)
+  useEffect(() => setLoaded(false), [open]);
 
   useEffect(() => {
     if (open === null) return;
@@ -144,15 +148,26 @@ export function Gallery({ gallery, images = [] }: { gallery: Dictionary["gallery
           )}
 
           <div className="lb-stage" onClick={(e) => e.stopPropagation()}>
+            {!loaded && <span className="lb-spin" aria-hidden />}
             <Image
               src={images[open]}
               alt={gallery.captions[open] ?? "ID Apartment"}
               fill
               sizes="92vw"
               priority
-              style={{ objectFit: "contain" }}
+              onLoad={() => setLoaded(true)}
+              style={{ objectFit: "contain", opacity: loaded ? 1 : 0, transition: "opacity .25s var(--ease)" }}
             />
-            {gallery.captions[open] && <span className="lb-cap">{gallery.captions[open]}</span>}
+            {gallery.captions[open] && loaded && <span className="lb-cap">{gallery.captions[open]}</span>}
+          </div>
+
+          {/* Preload susjednih slika (N±1) da prebacivanje bude trenutno */}
+          <div aria-hidden style={{ position: "absolute", width: 1, height: 1, left: -99999, top: 0, opacity: 0, pointerEvents: "none" }}>
+            {[wrap(open - 1), wrap(open + 1)].map((i) => (
+              <span key={i} style={{ position: "absolute", width: "92vw", height: "74vh" }}>
+                <Image src={images[i]} alt="" fill sizes="92vw" priority style={{ objectFit: "contain" }} />
+              </span>
+            ))}
           </div>
 
           {images.length > 1 && (

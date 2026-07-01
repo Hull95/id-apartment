@@ -27,6 +27,8 @@ const securityHeaders = [
 const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
+    // Statične slike apartmana — drži optimizovane varijante u kešu duže (31 dan)
+    minimumCacheTTL: 2678400,
   },
   devIndicators: false,
   async headers() {
