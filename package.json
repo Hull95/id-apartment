@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "next": "^15.5.19",
     "node-ical": "^0.20.1",
     "react": "19.0.0",

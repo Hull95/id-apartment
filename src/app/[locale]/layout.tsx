@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { site } from "@/lib/config";
 import { locales, isLocale, ogLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 
 const inter = Inter({
@@ -89,6 +90,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {children}
+        <Analytics />
       </body>
     </html>
   );
