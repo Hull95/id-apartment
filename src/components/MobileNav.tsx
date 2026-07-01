@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { LangSwitcher } from "@/components/LangSwitcher";
@@ -33,7 +32,7 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
     <div className="mobile-menu">
       <div className="mm-top">
         <div className="mm-brand">
-          <Image src="/logo_ap.png" alt={brand} width={363} height={159} className="brand-logo" priority />
+          <span className="mark">ID</span> {brand}
         </div>
         <div className="mm-top-right">
           <div onClick={() => setOpen(false)}>

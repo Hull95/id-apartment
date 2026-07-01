@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { LangSwitcher } from "@/components/LangSwitcher";
 import { MobileNav } from "@/components/MobileNav";
 import type { Locale } from "@/i18n/config";
@@ -9,7 +8,7 @@ export function Nav({ brand, nav, locale }: { brand: string; nav: Dictionary["na
     <nav id="nav">
       <div className="nav-in">
         <div className="brand">
-          <Image src="/logo_ap.png" alt={brand} width={363} height={159} className="brand-logo" priority />
+          <span className="mark">ID</span> {brand}
         </div>
         <div className="nav-links">
           <a href="#about">{nav.about}</a>
