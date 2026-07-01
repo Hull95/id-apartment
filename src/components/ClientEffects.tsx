@@ -71,6 +71,20 @@ export function ClientEffects() {
       anchorHandlers.push(() => a.removeEventListener("click", handler));
     });
 
+    // Logo/brand -> skrol na vrh stranice
+    const brand = document.querySelector<HTMLElement>(".brand");
+    const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    const brandClick = () => toTop();
+    const brandKey = (e: Event) => {
+      const ke = e as KeyboardEvent;
+      if (ke.key === "Enter" || ke.key === " ") {
+        e.preventDefault();
+        toTop();
+      }
+    };
+    brand?.addEventListener("click", brandClick);
+    brand?.addEventListener("keydown", brandKey);
+
     // Hero dots
     const dots = document.querySelectorAll(".hero-dots i");
     let hi = 0;
@@ -82,6 +96,8 @@ export function ClientEffects() {
     return () => {
       clearTimeout(t);
       clearInterval(dotTimer);
+      brand?.removeEventListener("click", brandClick);
+      brand?.removeEventListener("keydown", brandKey);
       window.removeEventListener("scroll", onScroll);
       obs.disconnect();
       faqHandlers.forEach((fn) => fn());

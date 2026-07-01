@@ -31,7 +31,17 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
   const menu = (
     <div className="mobile-menu">
       <div className="mm-top">
-        <div className="mm-brand">
+        <div
+          className="mm-brand"
+          role="button"
+          tabIndex={0}
+          aria-label={brand}
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            setOpen(false);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
           <span className="mark">ID</span> {brand}
         </div>
         <div className="mm-top-right">
