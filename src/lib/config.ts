@@ -40,6 +40,12 @@ export function telLink() {
 export function mapsSearch(query: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
+// Pretraga (npr. "restorani") centrirana oko lokacije apartmana — otvara Google Maps
+// sa rezultatima u krugu apartmana.
+export function mapsSearchNear(query: string) {
+  const { lat, lng } = site.location;
+  return `https://www.google.com/maps/search/${encodeURIComponent(query)}/@${lat},${lng},16z`;
+}
 export function mapsDir() {
   return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(site.location.address)}`;
 }

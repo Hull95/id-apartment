@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { site } from "@/lib/config";
 import { locales, isLocale, ogLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n";
+import { getSiteImages } from "@/lib/gallery";
 import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 
@@ -59,16 +60,18 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (!isLocale(locale)) notFound();
 
   const dict = getDictionary(locale);
+  // Prave slike apartmana za structured data (bolje za rich results).
+  const galleryImages = getSiteImages().gallery.slice(0, 6).map((src) => `${site.domain}${src}`);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Apartment",
     name: site.name,
     url: `${site.domain}/${locale}`,
     description: dict.meta.description,
-    image: `${site.domain}/${locale}/opengraph-image`,
+    image: [`${site.domain}/${locale}/opengraph-image`, ...galleryImages],
     numberOfRooms: 1,
     occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3, unitText: "guests" },
-    floorSize: { "@type": "QuantitativeValue", value: 34, unitCode: "MTK" },
+    floorSize: { "@type": "QuantitativeValue", value: 35, unitCode: "MTK" },
     amenityFeature: dict.about.amenities.map((a) => ({
       "@type": "LocationFeatureSpecification",
       name: a,

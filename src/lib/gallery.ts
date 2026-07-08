@@ -18,20 +18,33 @@ const IMG_RE = /\.(jpe?g|png|webp|avif)$/i;
  */
 const GALLERY_ORDER = [
   "dnevna_soba",
-  "spavaca_soba_1",
+  "spavaca_soba",
   "kupatilo",
   "kuhinja",
   "dnevna_soba_1",
   "dnevna_soba_2",
   "dnevna_soba_3",
+  "dnevna_soba_4",
+  "dnevna_soba_5",
+  "kuhinja_1",
+  "spavaca_soba_1",
   "spavaca_soba_2",
+  "spavaca_soba_3",
+  "spavaca_soba_4",
+  "kupatilo_1",
   "hodnik",
-  "pogled_iz_stana",
+  "pogled",
+  "pogled_1",
   "parking",
 ];
 
-/** Kurirane slike za hero slideshow — 3× dnevna soba + 1× spavaća, rotiraju. */
-const HERO_ORDER = ["dnevna_soba", "dnevna_soba_1", "dnevna_soba_2", "spavaca_soba_1"];
+/**
+ * Kurirane slike za hero slideshow (rotiraju).
+ * Redoslijed: dnevna_soba, dnevna_soba_3, dnevna_soba_5, spavaca_soba, pogled_1.
+ * Na ekranima > 1500px CSS izbaci prvu (dnevna_soba) i prikaže zadnju (pogled_1);
+ * na manjim ekranima prikazuje se prve 4, a pogled_1 je skriven.
+ */
+const HERO_ORDER = ["dnevna_soba", "dnevna_soba_3", "dnevna_soba_5", "spavaca_soba", "pogled_1"];
 
 const base = (f: string) => f.replace(IMG_RE, "").toLowerCase();
 

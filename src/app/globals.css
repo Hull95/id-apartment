@@ -98,15 +98,27 @@
   .hero-slide.sl2{background:linear-gradient(135deg,#13443F,#1B5A54);animation-delay:6s}
   .hero-slide.sl3{background:linear-gradient(135deg,#1F6B63,#114E48);animation-delay:12s}
   .hero-slide.sl4{background:linear-gradient(135deg,#0F766E,#0B403B);animation-delay:18s}
+  .hero-slide.sl5{background:linear-gradient(135deg,#123F3A,#0B403B);animation-delay:18s;display:none}
   @keyframes slideShow{0%{opacity:0}4%{opacity:1}21%{opacity:1}25%{opacity:0}100%{opacity:0}}
-  /* Ken Burns: slika krene blago uvećana i uz lagani zoom-out + pan otkriva čitav kadar dok je slajd vidljiv */
+  /* Ken Burns: blagi, smireni zoom + pan preko cijele sekcije (bez naglog sječenja) */
   .hero-slide img{will-change:transform;animation:kenburns 24s infinite var(--ease)}
   .hero-slide.sl1 img{animation-delay:0s}
   .hero-slide.sl2 img{animation-delay:6s}
   .hero-slide.sl3 img{animation-delay:12s}
   .hero-slide.sl4 img{animation-delay:18s}
-  @keyframes kenburns{0%{transform:scale(1.13) translate3d(-2.5%,2%,0)}30%{transform:scale(1) translate3d(0,0,0)}100%{transform:scale(1) translate3d(0,0,0)}}
-  .hero-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(38,38,40,0.8) 0%,rgba(38,38,40,0.46) 32%,rgba(38,38,40,0.2) 68%,rgba(38,38,40,0.1) 100%)}
+  .hero-slide.sl5 img{animation-delay:18s}
+  @keyframes kenburns{0%{transform:scale(1.06) translate3d(-1%,0.5%,0)}30%{transform:scale(1) translate3d(0,0,0)}100%{transform:scale(1) translate3d(0,0,0)}}
+  /* > 1500px: izbaci prvi slajd (dnevna_soba), prikaži zadnji (pogled_1), pomjeri tajminge */
+  @media(min-width:1501px){
+    .hero-slide.sl1{display:none}
+    .hero-slide.sl5{display:block}
+    .hero-slide.sl2,.hero-slide.sl2 img{animation-delay:0s}
+    .hero-slide.sl3,.hero-slide.sl3 img{animation-delay:6s}
+    .hero-slide.sl4,.hero-slide.sl4 img{animation-delay:12s}
+    .hero-slide.sl5,.hero-slide.sl5 img{animation-delay:18s}
+  }
+  @media(min-width:1501px) and (prefers-reduced-motion:reduce){.hero-slide.sl2{opacity:1}}
+  .hero-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(26,30,30,0.72) 0%,rgba(26,30,30,0.46) 30%,rgba(26,30,30,0.12) 62%,rgba(26,30,30,0) 100%),linear-gradient(0deg,rgba(26,30,30,0.66) 0%,rgba(26,30,30,0.2) 26%,rgba(26,30,30,0) 56%)}
   .hero-dots{position:absolute;bottom:28px;right:32px;z-index:5;display:flex;gap:8px}
   .hero-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);transition:all .3s}
   .hero-dots i.on{background:#fff;width:26px;border-radius:8px}
@@ -148,7 +160,7 @@
   .marquee:hover .marquee-track{animation-play-state:paused}
 
   /* GALLERY */
-  .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(110px,16vw,170px);gap:clamp(10px,1.5vw,16px)}
+  .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(110px,16vw,170px);gap:clamp(10px,1.5vw,16px);grid-auto-flow:dense}
   .gal .cell{background:var(--sand);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:#A8C4BF;position:relative;overflow:hidden;cursor:pointer;border:1px solid var(--line);transition:transform .45s var(--ease)}
   .gal .cell::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,118,110,0.14),rgba(15,118,110,0.12));opacity:0;transition:opacity .35s}
   .gal .cell:hover{transform:scale(.97)}.gal .cell:hover::before{opacity:1}

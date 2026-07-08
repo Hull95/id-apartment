@@ -1,25 +1,25 @@
 import Image from "next/image";
-import { site } from "@/lib/config";
 import { Icon } from "@/components/ui/Icon";
 import { Button } from "@/components/ui/Button";
 import type { Dictionary } from "@/i18n";
 
 export function Hero({ hero, images = [] }: { hero: Dictionary["hero"]; images?: string[] }) {
-  // 4 slota za slideshow; ako ima slika, popuni ih (ciklično), inače gradijent placeholderi.
-  const slots = [0, 1, 2, 3];
+  // Jedan slajd po slici; bez slika → 4 gradijent placeholdera.
+  // CSS (>1500px) skriva prvi slajd i prikazuje zadnji (pogled_1).
+  const slides = images.length > 0 ? images : ["", "", "", ""];
   return (
     <header className="hero">
       <div className="hero-slides">
-        {slots.map((i) => (
+        {slides.map((src, i) => (
           <div key={i} className={`hero-slide sl${i + 1}`}>
-            {images.length > 0 && (
+            {src && (
               <Image
-                src={images[i % images.length]}
-                alt={i === 0 ? site.name : ""}
+                src={src}
+                alt={i === 0 ? hero.imageAlt : ""}
                 fill
-                priority={i === 0}
+                priority={i <= 1}
                 sizes="100vw"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", objectPosition: "center 60%" }}
               />
             )}
           </div>
