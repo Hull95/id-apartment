@@ -1,5 +1,5 @@
 export const sr = {
-  brand: "ID Apartment",
+  brand: "City Point Apartment",
   nav: {
     about: "Apartman",
     availability: "Dostupnost",
@@ -18,7 +18,7 @@ export const sr = {
       "Stilski uređen i potpuno opremljen apartman u srcu Banjaluke. Sve znamenitosti, kafići i poslovni centar na nekoliko minuta hoda — savršen za parove i poslovne goste.",
     ctaAvailability: "Provjeri dostupnost",
     ctaGallery: "Pogledaj galeriju",
-    imageAlt: "Uređen dnevni boravak — stan na dan ID Apartment u centru Banjaluke",
+    imageAlt: "Uređen dnevni boravak — stan na dan City Point Apartment u centru Banjaluke",
     facts: [
       { n: "35m²", l: "komforan prostor" },
       { n: "2–3", l: "gosta" },
@@ -135,12 +135,12 @@ export const sr = {
     message: "Zdravo, zanima me dostupnost apartmana za termin:",
   },
   meta: {
-    title: "ID Apartment — Stan na dan Banja Luka, centar | Rezerviši odmah",
+    title: "City Point Apartment — Stan na dan Banja Luka, centar | Rezerviši odmah",
     description:
       "Moderan, potpuno opremljen apartman na dan u centru Banjaluke — Prvog krajiškog korpusa 13. Idealan za parove i poslovne goste. Provjeri dostupnost i rezerviši preko Vibera ili WhatsAppa.",
-    ogTitle: "ID Apartment — Stan na dan Banja Luka, centar",
+    ogTitle: "City Point Apartment — Stan na dan Banja Luka, centar",
     ogDescription: "Moderan apartman na dan u srcu Banjaluke. Provjeri dostupnost i rezerviši preko Vibera ili WhatsAppa.",
-    keywords: ["stan na dan Banja Luka", "apartman Banja Luka", "smještaj Banja Luka centar", "stan na dan BL", "kratkoročni najam Banja Luka", "ID Apartment"],
+    keywords: ["stan na dan Banja Luka", "apartman Banja Luka", "smještaj Banja Luka centar", "stan na dan BL", "kratkoročni najam Banja Luka", "City Point Apartment"],
   },
 };
 

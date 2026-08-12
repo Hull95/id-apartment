@@ -1,7 +1,7 @@
 import type { Dictionary } from "./sr";
 
 export const de: Dictionary = {
-  brand: "ID Apartment",
+  brand: "City Point Apartment",
   nav: {
     about: "Apartment",
     availability: "Verfügbarkeit",
@@ -20,7 +20,7 @@ export const de: Dictionary = {
       "Ein stilvolles, voll ausgestattetes Apartment im Herzen von Banja Luka. Alle Sehenswürdigkeiten, Cafés und das Geschäftsviertel sind nur wenige Gehminuten entfernt — perfekt für Paare und Geschäftsreisende.",
     ctaAvailability: "Verfügbarkeit prüfen",
     ctaGallery: "Galerie ansehen",
-    imageAlt: "Eingerichtetes Wohnzimmer — ID Apartment Kurzzeitwohnung im Zentrum von Banja Luka",
+    imageAlt: "Eingerichtetes Wohnzimmer — City Point Apartment Kurzzeitwohnung im Zentrum von Banja Luka",
     facts: [
       { n: "35m²", l: "Komfort" },
       { n: "2–3", l: "Gäste" },
@@ -137,11 +137,11 @@ export const de: Dictionary = {
     message: "Hallo, ich interessiere mich für die Verfügbarkeit des Apartments für den Zeitraum:",
   },
   meta: {
-    title: "ID Apartment — Apartment auf Tagesbasis in Banja Luka Zentrum | Jetzt buchen",
+    title: "City Point Apartment — Apartment auf Tagesbasis in Banja Luka Zentrum | Jetzt buchen",
     description:
       "Ein modernes, voll ausgestattetes Apartment auf Tagesbasis im Zentrum von Banja Luka — Prvog krajiškog korpusa 13. Ideal für Paare und Geschäftsreisende. Verfügbarkeit prüfen und über Viber oder WhatsApp buchen.",
-    ogTitle: "ID Apartment — Apartment in Banja Luka Zentrum",
+    ogTitle: "City Point Apartment — Apartment in Banja Luka Zentrum",
     ogDescription: "Ein modernes Apartment auf Tagesbasis im Herzen von Banja Luka. Verfügbarkeit prüfen und über Viber oder WhatsApp buchen.",
-    keywords: ["Apartment Banja Luka", "Tagesmiete Banja Luka", "Unterkunft Banja Luka Zentrum", "Kurzaufenthalt Banja Luka", "Apartment mieten Banja Luka", "ID Apartment"],
+    keywords: ["Apartment Banja Luka", "Tagesmiete Banja Luka", "Unterkunft Banja Luka Zentrum", "Kurzaufenthalt Banja Luka", "Apartment mieten Banja Luka", "City Point Apartment"],
   },
 };

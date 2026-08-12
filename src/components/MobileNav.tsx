@@ -49,7 +49,7 @@ export function MobileNav({ brand, nav, locale }: { brand: string; nav: Dictiona
             }
           }}
         >
-          <span className="mark">ID</span> {brand}
+          <span className="mark">CP</span> {brand}
         </div>
         <div className="mm-top-right">
           <div onClick={() => setOpen(false)}>

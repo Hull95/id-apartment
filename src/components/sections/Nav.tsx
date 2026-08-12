@@ -8,7 +8,7 @@ export function Nav({ brand, nav, locale }: { brand: string; nav: Dictionary["na
     <nav id="nav">
       <div className="nav-in">
         <div className="brand" role="button" tabIndex={0} aria-label={brand}>
-          <span className="mark">ID</span> {brand}
+          <span className="mark">CP</span> {brand}
         </div>
         <div className="nav-links">
           <a href="#about">{nav.about}</a>

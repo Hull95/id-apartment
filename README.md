@@ -1,4 +1,4 @@
-# ID Apartment — sajt za stan na dan
+# City Point Apartment — sajt za stan na dan
 
 Moderan Next.js 15 sajt za apartman na dan u Banjaluci. Hero slideshow,
 kalendar dostupnosti sinhronizovan sa Booking.com, galerija, Google mapa,

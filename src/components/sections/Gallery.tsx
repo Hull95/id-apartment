@@ -15,8 +15,8 @@ export function Gallery({ gallery, images = [] }: { gallery: Dictionary["gallery
   const has = images.length > 0;
   const rooms = gallery.rooms as Record<string, string>;
   // Opisni natpis + alt po slici (SEO/pristupačnost).
-  const label = useCallback((src: string) => rooms[roomKey(src)] ?? "ID Apartment", [rooms]);
-  const alt = useCallback((src: string) => `${label(src)} — ID Apartment, stan na dan Banja Luka`, [label]);
+  const label = useCallback((src: string) => rooms[roomKey(src)] ?? "City Point Apartment", [rooms]);
+  const alt = useCallback((src: string) => `${label(src)} — City Point Apartment, stan na dan Banja Luka`, [label]);
 
   // Prva slika je istaknuta (velika); ostale su ravnomjerne ćelije.
   const isBig = (i: number) => i === 0;

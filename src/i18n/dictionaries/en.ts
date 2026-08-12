@@ -1,7 +1,7 @@
 import type { Dictionary } from "./sr";
 
 export const en: Dictionary = {
-  brand: "ID Apartment",
+  brand: "City Point Apartment",
   nav: {
     about: "Apartment",
     availability: "Availability",
@@ -20,7 +20,7 @@ export const en: Dictionary = {
       "A stylish, fully equipped apartment in the heart of Banja Luka. Every sight, café and the business district are just a few minutes' walk away — perfect for couples and business guests.",
     ctaAvailability: "Check availability",
     ctaGallery: "View gallery",
-    imageAlt: "Furnished living room — ID Apartment short-stay flat in central Banja Luka",
+    imageAlt: "Furnished living room — City Point Apartment short-stay flat in central Banja Luka",
     facts: [
       { n: "35m²", l: "of comfort" },
       { n: "2–3", l: "guests" },
@@ -137,11 +137,11 @@ export const en: Dictionary = {
     message: "Hello, I'm interested in the apartment's availability for the dates:",
   },
   meta: {
-    title: "ID Apartment — Daily apartment rental in Banja Luka centre | Book now",
+    title: "City Point Apartment — Daily apartment rental in Banja Luka centre | Book now",
     description:
       "A modern, fully equipped apartment by the day in the centre of Banja Luka — Prvog krajiškog korpusa 13. Ideal for couples and business guests. Check availability and book via Viber or WhatsApp.",
-    ogTitle: "ID Apartment — Daily apartment in Banja Luka centre",
+    ogTitle: "City Point Apartment — Daily apartment in Banja Luka centre",
     ogDescription: "A modern apartment by the day in the heart of Banja Luka. Check availability and book via Viber or WhatsApp.",
-    keywords: ["apartment Banja Luka", "daily rental Banja Luka", "accommodation Banja Luka centre", "short stay Banja Luka", "apartment for rent Banja Luka", "ID Apartment"],
+    keywords: ["apartment Banja Luka", "daily rental Banja Luka", "accommodation Banja Luka centre", "short stay Banja Luka", "apartment for rent Banja Luka", "City Point Apartment"],
   },
 };
